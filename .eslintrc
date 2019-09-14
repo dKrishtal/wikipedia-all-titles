@@ -1,0 +1,55 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "google"
+  ],
+  "rules": {
+    "no-var": 0,
+    "max-len": 0,
+    "comma-dangle": 0,
+    "spaced-comment": 0,
+    "new-cap": 0,
+    "no-trailing-spaces": [
+      "error",
+      {
+        "skipBlankLines": true
+      }
+    ],
+    "require-jsdoc": 0,
+    "quote-props": 0,
+    "object-curly-spacing": 0,
+    "prefer-rest-params": 0,
+    "linebreak-style": 0,
+    "no-extra-bind": 0,
+    "guard-for-in": 0,
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "indent": "off",
+    "@typescript-eslint/indent": [
+      "error",
+      2
+    ],
+    "@typescript-eslint/member-delimiter-style": [
+      "error",
+      {
+        "multiline": {
+          "delimiter": "comma",
+          "requireLast": false
+        }
+      }
+    ],
+    "@typescript-eslint/no-var-requires": 0
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  }
+}
